@@ -56,8 +56,8 @@ public class Login extends HttpServlet {
  		rs = stmt.executeQuery("SELECT * FROM JP_USERS");
  		
  		while(rs.next()) {
- 		System.out.println("hello" + rs.getString("SURNAME")+rs.getString("FIRSTNAME")+rs.getString("EMAIL")+rs.getString("PASSWORD"));
- 			UDB.add(new User(rs.getString("FIRSTNAME"),rs.getString("SURNAME"),rs.getString("EMAIL"),rs.getString("PASSWORD")));}
+// 		System.out.println("hello" + rs.getString("SURNAME")+rs.getString("FIRSTNAME")+rs.getString("EMAIL")+rs.getString("PASSWORD"));
+ 			UDB.add(new User(rs.getString("FIRSTNAME"),rs.getString("SURNAME"),rs.getString("EMAIL"),rs.getString("PASSWORD"),rs.getBoolean("ADMIN")));}
  		
  		Enumeration<User> e=UDB.elements();
  		while(e.hasMoreElements()) {

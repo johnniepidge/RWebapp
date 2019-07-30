@@ -4,7 +4,25 @@ public class User {
 	private String Sname;
 	private String email;
 	private String pword;
+	private boolean admin;
 	
+	public User(String fname, String sname, String email, String pword, boolean admin) {
+		super();
+		Fname = fname;
+		Sname = sname;
+		this.email = email;
+		this.pword = pword;
+		this.admin = admin;
+	}
+
+	public boolean isAdmin() {
+		return admin;
+	}
+
+	public void setAdmin(boolean admin) {
+		this.admin = admin;
+	}
+
 	public String getFname() {
 		return Fname;
 	}
@@ -37,13 +55,7 @@ public class User {
 		this.pword = pword;
 	}
 
-	public User(String fname, String sname, String email, String pword) {
-		super();
-		Fname = fname;
-		Sname = sname;
-		this.email = email;
-		this.pword = pword;
-	}
+
 
 	
 

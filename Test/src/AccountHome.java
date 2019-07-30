@@ -89,11 +89,7 @@ public class AccountHome extends HttpServlet {
 					"</body>\n" + 
 					"</html>");
 			
-			System.out.println("test "  +user.getEmail());
-
-		
-		
-
+			System.out.println("test2 "  +user.getEmail());	
 		
 
 		out.close();
